@@ -5,8 +5,8 @@ import com.example.a187_roomdatabase.room.SiswaDao
 import kotlinx.coroutines.flow.Flow
 
 interface RepositoriSiswa {
-    fun getAllSiswa(): Flow<List<Siswa>>
-    suspend fun insertSiswa(siswa: Siswa)
+    fun getAllSiswaStream(): Flow<List<Siswa>>
+    suspend fun InsertSiswa(siswa: Siswa)
 }
 
 class OfflineRepositoriSiswa(
